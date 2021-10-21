@@ -29,3 +29,15 @@
     width: 30px;
     object-fit: contain;
 }
+
+@media screen and (max-width :606px) {
+    .nav{
+        padding: 10px;
+    }
+    .nav_logo{
+        width: 60px;
+    }
+    .nav_avatar{
+        width: 20px;
+    }
+}
