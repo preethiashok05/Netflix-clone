@@ -1,0 +1,41 @@
+.poster_row{
+    display:flex;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.poster_row::-webkit-scrollbar{
+    display: none;
+}
+
+.posterlarge{
+    max-height: 275px;
+}
+.poster ,.posterlarge{
+    width:100%;
+    margin-right: 10px;
+    object-fit: contain;
+    transition:  transform 450ms;
+    border-radius: 5px;
+}
+ .poster{
+     max-height: 150px;
+ }
+
+.poster:hover{
+    transform: scale(1.1);  
+
+}
+
+.posterlarge:hover{
+    transform: scale(1.1);  
+}
+
+@media screen and (max-width : 425px) {
+    .poster{
+        max-height: 100px;
+    }
+    .posterlarge{
+        max-height: 200px;
+    }
+}
